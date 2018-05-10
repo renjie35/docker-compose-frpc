@@ -1,0 +1,19 @@
+version: "2"
+services:
+    frps:
+      container_name: frps
+      image: frps-docker
+      ports:
+        - "5443:5443"
+        - "6443:6443"
+        - "80:80"
+        - "443:443"
+      environment:
+        - set_bind_port=5443
+        - set_dashboard_port=6443
+        - set_vhost_http_port=80
+        - set_vhost_https_port=443
+        - set_privilege_token=password
+        - set_max_pool_count=50
+        - str_log_level=info
+        - set_log_max_days=3
