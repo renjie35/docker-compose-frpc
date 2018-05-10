@@ -1,4 +1,4 @@
-# Zookeeper
+# FRPC
 
 ## 一.下载&导入&运行
 github镜像下载地址：
